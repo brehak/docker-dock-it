@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/bloodbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: black;
+}
+
+header {
+    border: black 5px solid;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    margin: 0 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav button {
+    padding: 8px 12px;
+    color: #f3bbbb;
+    border: black 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container {
+    background-color: #cfcfcf;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.form-control, .form-select {
+    font-size: 15px;
+    padding: 10px;
+    border: 3px solid darkred;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+form button {
+    display: block;
+    font-size: 1em;
+    padding: 8px 10px;
+    background-color: #f3bbbb;
+    cursor: pointer;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border: black 2px solid;
+}
+
+button:hover {
+    color: #950000;
+    opacity: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.carousel-item img {
+    max-width: 600px;
+    max-height: 800px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #808080;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 60%;
+}
