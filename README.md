@@ -1,49 +1,66 @@
-# Docker Demo #
+# WordPress Development - Stephen King Books Plugin
 
-Start by updating the remote url to your own repo:
-```shell
-git remote set-url origin https://your-git-repo/new-repository.git
-```
-Push it and check GitHub.
-```shell
-git push
-```
-After opening one of the starter branches, view the README for further instructions.
+## Instructions to Create .env File
 
+To create the `.env` file, copy the `.env.example` file and fill in the required values:
 
-## Starter Branches
-### PHP Demo
-```shell
-git checkout php-starter
+```bash
+cp .env.example .env
 ```
 
-### WordPress Demo
-```shell
-git checkout wp-starter
+## Running the Project
+
+To start the project, use the following command:
+
+```bash
+docker-compose up
 ```
 
-### WordPress Author Site
-```shell
-git checkout wp-author-site
+## WP CLI Commands to Install Required Plugins
+
+You can install the required plugins using WP CLI with the following commands:
+
+```bash
+wp plugin install stephen-king-books --activate
+wp plugin install reviews --activate
+wp plugin install blockart-blocks --activate
+wp plugin install loco-translate --activate
+wp plugin install query-monitor --activate
+wp plugin install everest-forms --activate
+wp plugin install mailhog --activate
 ```
 
-## To get updates
-1. Add the remote, call it "upstream":
-   ```shell
-   git remote add upstream https://github.com/tylerkowalchuk/docker-dock-it.git
-   ```
+### Zakra Theme Installation
 
-2. Fetch all the branches of that remote into remote-tracking branches
-   ```shell
-   git fetch upstream
-   ```
+Additionally, install the Zakra theme:
 
-3. Make sure that you're on your branch (replace \_\_branchname\_\_ with the branch name):
-   ```shell
-   git checkout __branchname__
-   ```
+```bash
+wp theme install zakra --activate
+```
 
-4. Rewrite your main branch so that any commits of yours that aren't already in upstream/main are replayed on top of that other branch:
-   ```shell
-   git rebase upstream/__branchname__
-   ```
+## Links to Localhost Services
+- **WordPress:** [http://localhost:8000](http://localhost:8000)
+- **phpMyAdmin:** [http://localhost:8080](http://localhost:8080)
+- **MailHog:** [http://localhost:8025](http://localhost:8025)
+
+## WP CLI Usage Instructions
+
+This project utilizes WP CLI for managing WordPress installations. Ensure that WP CLI is installed and available in your Docker container.
+
+To use WP CLI, you can run commands like:
+
+```bash
+docker exec -it <container_name> wp <command>
+```
+
+Replace `<container_name>` with the name of your WordPress container, and `<command>` with the WP CLI command you wish to execute.
+
+## Demo Admin Credentials
+
+For demo purposes, use the following credentials:
+- **Username:** demo
+- **Password:** demo123
+
+## Custom Theme and Plugins Included
+
+This project includes a custom theme and several plugins specifically tailored for a WordPress development environment focused on Stephen King books.
