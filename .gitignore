@@ -22,5 +22,8 @@
 
 # … except our stuff.
 !/wordpress/wp-content/plugins/mailhog.php
+!/wordpress/wp-content/plugins/skb-review-shortcode
+!/wordpress/wp-content/plugins/stephen-king-books
 !/wordpress/wp-content/themes/zakra
+!/wordpress/wp-content/themes/child
 
